@@ -2,26 +2,202 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    /* main component */
+
+.main-page-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.main-page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #D6A2E8;
+    min-height: 35vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.first-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.sec-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.third-row{
+    padding-top: 10px;
+}
+
+.btn-group{
+    padding-top: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-page-mid{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+.copy-text-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    width: 75%;
+    background-color: #fff;
+    min-height: 7vh;
+    border-radius: 10px;
+    color: #161659;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #f5d8ff;
+}
+.recent-heading{
+    font-size: 18px;
+    padding: 15px;
+    font-weight: bold;
+}
+.recent-tile-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9vh;
+    background-color: #f8e4ff;
+    border: 2px solid #f8e4ff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recent-tile-text{
+    font-size: 18px;
+}
+.recent-tile-text span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.recent-tile-btn{
+    color: #161659;
+}
+
+.recent-tile-icon{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.main-page-fotter{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#D6A2E8 ;
+    min-height: 10vh;
+}
+
+.scan-header{
+    width: 100%;
+    background-color: #D6A2E8;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scan-camera{
+    background-color: #fefaff;
+    min-height: 25vh;
+   width: 25vh;
+    
+}
+
+.scan-warning{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.scan-warning-text{
+    background-color: #5b5bdb;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #ff4c58;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-wrapper span{
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    color: #161659;
+    margin-bottom: 20px;
+}
+
+.pay-btn-wrapper{
+    background-color: #161659;
+    width: 50%;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.pay-btn-icon{
+    background-color: #fff;
+    min-height: 6vh;
+    width: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.pay-btn-text{
+    font-size: 25px;
+    color:#FFF;
+    letter-spacing: 5px;
+    margin-left: 10px;
 }
