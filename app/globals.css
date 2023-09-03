@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 *{
     margin: 0;
@@ -140,7 +142,6 @@
     align-items: center;
 }
 .scan-camera{
-    background-color: #fefaff;
     min-height: 25vh;
    width: 25vh;
     
@@ -200,4 +201,94 @@
     color:#FFF;
     letter-spacing: 5px;
     margin-left: 10px;
+}
+
+.pay-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: space-between;
+    background-color: #f8e4ff;
+}
+
+.pay-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #3d5af1;
+    color:#0e153a;
+    min-height: 7vh;
+}
+
+.pay-user-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap:5vw;
+    padding-left: 5vw;
+    align-items: center;
+}
+
+.pay-second-sec{
+    text-align: center;
+    padding: 20px;
+}
+
+.pay-info-wrapper h4{
+    font-size: 20px;
+}
+ .pay-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+.pay-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #3d5af1;
+    min-height: 50vh;
+    color:white;
+    padding-top: 30px;
+}
+
+.pay-info-wrapper h6{
+    font-size: 15px;
+}
+
+.pay-header-text{
+    width: 100%;
+    text-align: center;
+}
+
+.pay-header-text h3{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+.history-header{
+    background-color: #3d5af1;
+    color: #ffff;
+}
+
+.history-list h3{
+    font-family:  'Poppins', sans-serif; 
+    font-weight: bold;
+    color:black
+}
+
+.history-item-details{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
