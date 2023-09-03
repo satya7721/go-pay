@@ -2,7 +2,6 @@
 import React from 'react';
 import { Typography, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material';
 import { Payment, Receipt } from '@mui/icons-material';
-import PaymentSuccess from '@/components/PayDone';
 
 function page() {
     const transactions = [
@@ -92,7 +91,7 @@ function page() {
                     ))}
                 </div>
             </List>
-            <PaymentSuccess open={true} onClose={()=>{alert('op')}}></PaymentSuccess>
+         
         </div>
     )
 }
